@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discover Your Fate</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="content">
+  <h1><span class="first-letter">У</span>знай свою судьбу</h1>
+  <div class="cards">
+    <!-- Повторите этот блок для каждой карты, изменяя src для изображений и тексты -->
+    <div class="card">
+      <div class="card-inner" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="Images/cover.png" alt="Tarot Card Cover">
+        </div>
+        <div class="card-back">
+          <img src="Images/card1.png" alt="Tarot Card">
+        </div>
+      </div>
+      <div class="card-text">
+        <h2 class="title">Сила</h2>
+        <h3 class="subtitle">Внутренняя мощь и самообладание</h3>
+        <p class="description">Эта карта символизирует личную силу и уверенность. Она говорит о том, что вы обладаете внутренней стойкостью и мужеством, чтобы преодолеть любые препятствия. Ваши страсти и инстинкты находятся под контролем, и вы используете их для достижения своих целей. Сила призывает вас быть смелым и решительным, но также и сострадательным и понимающим.</p>
+      </div>
+    </div>
+    <!-- Конец блока карты 1 -->
+    <div class="card">
+      <div class="card-inner" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="Images/cover.png" alt="Tarot Card Cover">
+        </div>
+        <div class="card-back">
+          <img src="Images/card2.png" alt="Tarot Card">
+        </div>
+      </div>
+      <div class="card-text">
+        <h2 class="title">Отшельник</h2>
+        <h3 class="subtitle">Поиск внутренней мудрости</h3>
+        <p class="description">Отшельник представляет период самоанализа и интроспекции. Он призывает вас отстраниться от внешнего мира и обратить внимание на свой внутренний голос. Это время для глубоких размышлений, обучения и поиска смысла. Отшельник напоминает вам, что ответы, которые вы ищете, находятся внутри вас.</p>
+      </div>
+    </div>
+    <!-- Конец блока карты 2 -->
+    <div class="card">
+      <div class="card-inner" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="Images/cover.png" alt="Tarot Card Cover">
+        </div>
+        <div class="card-back">
+          <img src="Images/card3.png" alt="Tarot Card">
+        </div>
+      </div>
+      <div class="card-text">
+        <h2 class="title">Колесо Фортуны</h2>
+        <h3 class="subtitle">Циклы судьбы и перемен</h3>
+        <p class="description">Колесо Фортуны олицетворяет неожиданные изменения, судьбу и цикличность жизни. Оно указывает на то, что жизнь постоянно движется вперед и что события, кажущиеся случайными, могут привести к важным возможностям. Принимайте переменчивость жизни и знайте, что каждый поворот колеса несет новые возможности.</p>
+      </div>
+    </div>
+    <!-- Конец блока карты 3 -->
+    <div class="card">
+      <div class="card-inner" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="Images/cover.png" alt="Tarot Card Cover">
+        </div>
+        <div class="card-back">
+          <img src="Images/card4.png" alt="Tarot Card">
+        </div>
+      </div>
+      <div class="card-text">
+        <h2 class="title">Смерть</h2>
+        <h3 class="subtitle">Конец и новое начало</h3>
+        <p class="description">Несмотря на свое название, карта Смерти редко указывает на физическую смерть. Скорее, она символизирует конец чего-то и начало нового этапа. Это может быть окончание отношений, карьеры или жизненного периода. Карта призывает вас отпустить устаревшее и быть открытыми для новых возможностей.</p>
+      </div>
+    </div>
+    <!-- Конец блока карты 4 -->
+    <div class="card">
+      <div class="card-inner" onclick="flipCard(this)">
+        <div class="card-front">
+          <img src="Images/cover.png" alt="Tarot Card Cover">
+        </div>
+        <div class="card-back">
+          <img src="Images/card5.png" alt="Tarot Card">
+        </div>
+      </div>
+      <div class="card-text">
+        <h2 class="title">Звезда</h2>
+        <h3 class="subtitle">Надежда и вдохновение</h3>
+        <p class="description">Звезда является символом надежды, веры в будущее и вдохновения. Она указывает на период спокойствия после бури и призывает вас следовать за своими мечтами. Эта карта обещает духовное просветление, ясность мысли и гармонию с Вселенной. Верьте в себя и в то, что звезды освещают ваш путь.</p>
+      </div>
+    </div>
+    <!-- Конец блока карты 5 -->
+  </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+}
+
+.content {
+  text-align: center;
+  padding-top: 0px; /* Отступ сверху для заголовка */
+}
+
+h1 {
+  font-family: 'Old Standard TT', serif;
+  font-size: 50px; /* Устанавливает размер шрифта для заголовков */
+  color: #7AB9C0;
+  margin-bottom: 0px; /* Отступ под заголовком */
+}
+
+.first-letter {
+  font-family: 'Old Standard TT', serif;
+  color: #E6B251;
+  font-size: 1.5em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 0 20px; /* Отступы по бокам для контейнера с картами */
+  margin-top: 25px; /* Опускаем карты вниз */
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  margin: 0 10px; /* Отступы между картами */
+  perspective: 1000px;
+  transition: transform 0.3s ease; /* Плавное увеличение */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px; /* Закругленные углы для карт */
+}
+
+.card-front {
+  background: url('Images/cover.png') no-repeat center/cover; /* Путь к обложке */
+}
+
+.card-back {
+  background-color: #fff;
+  transform: rotateY(180deg);
+}
+
+.card-front img, .card-back img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.card:hover .card-inner {
+  transform: scale(1.05); /* Увеличение при наведении */
+}
+
+.card.is-flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-text {
+  text-align: center;
+  visibility: hidden; /* Изначально тексты скрыты */
+  position: absolute;
+  width: 100%;
+  top: 490px; /* Расстояние от верхней части .card до начала .card-text */
+  left: 0;
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.card.is-flipped .card-text {
+  visibility: visible; /* Тексты становятся видимыми, когда карта перевернута */
+  opacity: 1;
+}
+
+.title {
+  font-family: 'Old Standard TT', serif;
+  color: #C84F41;
+  font-size: 34px; /* Устанавливает размер шрифта для заголовков */
+  margin-bottom: 5px; /* Уменьшаем внешний отступ снизу у заголовка */
+}
+
+
+.subtitle {
+  color: #E6B251;
+  margin-top: 0; /* Убираем внешний отступ сверху у подзаголовка, если он есть */
+}
+
+.description {
+  color: #FBEFBB;
+  font-size: 16px; /* Устанавливает размер шрифта для описания */
+  line-height: 1.5; /* Устанавливает межстрочное расстояние */
+}
